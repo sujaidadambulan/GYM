@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON FORGE | Premium Gym</title>
+    <meta name="description"
+        content="Unleash your potential at Iron Forge. Premium equipment, expert trainers, and high-energy atmosphere.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">IRON <span class="text-accent">FORGE</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#trainers" class="nav__link">Trainers</a></li>
+                    <li class="nav__item"><a href="#membership" class="nav__link">Membership</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <a href="#join" class="btn btn--sm nav__btn">Join Now</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home" id="home">
+            <div class="home__bg-overlay"></div>
+            <!-- Image will be set via CSS or img tag, let's use background image in CSS for better cover control -->
+            <div class="home__container container">
+                <div class="home__data">
+                    <h1 class="home__title">UNLEASH <br> YOUR <span class="text-stroke">POTENTIAL</span></h1>
+                    <p class="home__description">
+                        Premium equipment. Expert trainers. A community that pushes you further. Welcome to the future
+                        of fitness.
+                    </p>
+                    <div class="home__btns">
+                        <a href="#membership" class="btn btn--primary">Start Your Journey</a>
+                        <a href="#about" class="btn btn--secondary"><i class="fa-solid fa-play"></i> Watch Tour</a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link">
+                        Scroll Down <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content Holders -->
+        <div id="app-content">
+            <!-- About Section -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <div class="section__title-wrapper">
+                            <h2 class="section__title">WE ARE <span class="text-stroke">IRON FORGE</span></h2>
+                            <p class="about__description">
+                                More than just a gym. We are a community of dedicated individuals pushing past their
+                                limits.
+                                With state-of-the-art equipment and world-class trainers, your transformation starts
+                                here.
+                            </p>
+                        </div>
+
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">2000+</h3>
+                                <p class="about__stat-title">Members</p>
+                            </div>
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">50+</h3>
+                                <p class="about__stat-title">Expert Trainers</p>
+                            </div>
+                            <div class="about__stat">
+                                <h3 class="about__stat-number">24/7</h3>
+                                <p class="about__stat-title">Access</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__features grid">
+                        <div class="about__card">
+                            <div class="about__icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <h3 class="about__card-title">Premium Equipment</h3>
+                            <p class="about__card-description">Top-tier machinery for every muscle group.</p>
+                        </div>
+
+                        <div class="about__card">
+                            <div class="about__icon">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <h3 class="about__card-title">High Energy</h3>
+                            <p class="about__card-description">Atmosphere designed to keep you motivated.</p>
+                        </div>
+
+                        <div class="about__card">
+                            <div class="about__icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h3 class="about__card-title">Community</h3>
+                            <p class="about__card-description">Supportive environment for all levels.</p>
+                        </div>
+
+                        <div class="about__card">
+                            <div class="about__icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <h3 class="about__card-title">24/7 Access</h3>
+                            <p class="about__card-description">Train on your schedule, day or night.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services section" id="services">
+                <h2 class="section__title">OUR <span class="text-stroke">PROGRAMS</span></h2>
+
+                <div class="services__container container grid">
+                    <!-- Card 1: Strength -->
+                    <article class="services__card">
+                        <img src="assets/img/service-strength.png" alt="Strength Training" class="services__img">
+                        <div class="services__modal">
+                            <div>
+                                <h3 class="services__title">Strength Training</h3>
+                                <p class="services__description">Build power and definition with our pro-grade weights.
+                                </p>
+                                <a href="#" class="services__button"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Cardio -->
+                    <article class="services__card">
+                        <img src="assets/img/service-cardio.png" alt="Cardio" class="services__img">
+                        <div class="services__modal">
+                            <div>
+                                <h3 class="services__title">Cardio & HIIt</h3>
+                                <p class="services__description">Push your endurance to the limit.</p>
+                                <a href="#" class="services__button"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Personal Training -->
+                    <article class="services__card">
+                        <img src="assets/img/service-personal.png" alt="Personal Training" class="services__img">
+                        <div class="services__modal">
+                            <div>
+                                <h3 class="services__title">Personal Training</h3>
+                                <p class="services__description">Expert guidance customized to your goals.</p>
+                                <a href="#" class="services__button"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Zumba (Reusing Cardio for now) -->
+                    <article class="services__card">
+                        <img src="assets/img/service-cardio.png" alt="Zumba" class="services__img"
+                            style="filter: hue-rotate(45deg);">
+                        <div class="services__modal">
+                            <div>
+                                <h3 class="services__title">Zumba</h3>
+                                <p class="services__description">Dance your way to fitness in high-energy classes.</p>
+                                <a href="#" class="services__button"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: CrossFit (Reusing Strength for now) -->
+                    <article class="services__card">
+                        <img src="assets/img/service-strength.png" alt="CrossFit" class="services__img"
+                            style="filter: hue-rotate(180deg);">
+                        <div class="services__modal">
+                            <div>
+                                <h3 class="services__title">CrossFit</h3>
+                                <p class="services__description">Functional movements performed at high intensity.</p>
+                                <a href="#" class="services__button"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Membership Section -->
+            <section class="membership section" id="membership">
+                <h2 class="section__title">CHOOSE YOUR <span class="text-stroke">PLAN</span></h2>
+
+                <div class="membership__container container grid">
+                    <!-- Standard Plan -->
+                    <div class="membership__card">
+                        <h2 class="membership__title">IRON</h2>
+                        <h3 class="membership__price">$49 <span>/mo</span></h3>
+                        <ul class="membership__list">
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Gym Access</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Locker Room</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> 1 Guest Pass</li>
+                            <li class="membership__item item-disabled"><i class="fa-solid fa-xmark"></i> Group Classes
+                            </li>
+                            <li class="membership__item item-disabled"><i class="fa-solid fa-xmark"></i> Personal
+                                Trainer</li>
+                        </ul>
+                        <a href="#" class="btn btn--secondary membership__btn">Choose Plan</a>
+                    </div>
+
+                    <!-- Pro Plan (Highlighted) -->
+                    <div class="membership__card active">
+                        <div class="membership__sticker">BEST VALUE</div>
+                        <h2 class="membership__title">STEEL</h2>
+                        <h3 class="membership__price">$79 <span>/mo</span></h3>
+                        <ul class="membership__list">
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> 24/7 Gym Access</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Locker & Sauna</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Unlimited Classes</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Nutrition Guide</li>
+                            <li class="membership__item item-disabled"><i class="fa-solid fa-xmark"></i> Personal
+                                Trainer</li>
+                        </ul>
+                        <a href="#" class="btn membership__btn">Choose Plan</a>
+                    </div>
+
+                    <!-- Elite Plan -->
+                    <div class="membership__card">
+                        <h2 class="membership__title">TITANIUM</h2>
+                        <h3 class="membership__price">$129 <span>/mo</span></h3>
+                        <ul class="membership__list">
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> All Access VIP</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Private Locker</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Unlimited Classes</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> 4 PT Sessions</li>
+                            <li class="membership__item"><i class="fa-solid fa-check"></i> Monthly Massage</li>
+                        </ul>
+                        <a href="#" class="btn btn--secondary membership__btn">Choose Plan</a>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!-- Trainers Section -->
+        <section class="trainers section" id="trainers">
+            <h2 class="section__title">MEET THE <span class="text-stroke">TEAM</span></h2>
+
+            <div class="trainers__container container grid">
+                <!-- Trainer 1 -->
+                <div class="trainers__card">
+                    <img src="assets/img/trainer-male.png" alt="Trainer" class="trainers__img">
+                    <div class="trainers__content">
+                        <h3 class="trainers__name">ALEX STARK</h3>
+                        <span class="trainers__job">Strength Coach</span>
+                        <div class="trainers__social">
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainers__card">
+                    <img src="assets/img/trainer-female.png" alt="Trainer" class="trainers__img">
+                    <div class="trainers__content">
+                        <h3 class="trainers__name">SARAH VANCE</h3>
+                        <span class="trainers__job">HIIT Specialist</span>
+                        <div class="trainers__social">
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 (Reuse Male for now) -->
+                <div class="trainers__card">
+                    <img src="assets/img/trainer-male.png" alt="Trainer" class="trainers__img"
+                        style="transform: scaleX(-1);">
+                    <div class="trainers__content">
+                        <h3 class="trainers__name">MIKE ROSS</h3>
+                        <span class="trainers__job">CrossFit Lead</span>
+                        <div class="trainers__social">
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="trainers__social-link"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="testimonials">
+            <div class="testimonials__container container">
+                <div class="testimonials__content">
+                    <i class="fa-solid fa-quote-left testimonials__quote-icon"></i>
+                    <p class="testimonials__description">
+                        "Iron Forge changed my life. The atmosphere is unmatched and the trainers push you to be your
+                        best version. Highly recommended!"
+                    </p>
+                    <h3 class="testimonials__name">JAMES CALVIN</h3>
+                    <span class="testimonials__detail">Member since 2023</span>
+                </div>
+
+                <!-- Simplified single testimonial for now, carousel needs JS -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section" id="gallery">
+            <h2 class="section__title">OUR <span class="text-stroke">GALLERY</span></h2>
+
+            <div class="gallery__container container grid">
+                <!-- 6 Images Grid -->
+                <div class="gallery__card">
+                    <img src="assets/img/hero.png" alt="Gallery 1" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/img/service-strength.png" alt="Gallery 2" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/img/service-cardio.png" alt="Gallery 3" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/img/service-personal.png" alt="Gallery 4" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/img/trainer-male.png" alt="Gallery 5" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="gallery__card">
+                    <img src="assets/img/trainer-female.png" alt="Gallery 6" class="gallery__img">
+                    <div class="gallery__overlay"><i class="fa-solid fa-plus"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="section__title-wrapper">
+                        <h2 class="section__title" style="text-align: left;">VISIT <span class="text-stroke">US</span>
+                        </h2>
+                    </div>
+                    <p class="contact__description">
+                        Ready to start your journey? Drop by, give us a call, or join us for a session.
+                    </p>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="contact__card-title">Location</h3>
+                            <p class="contact__card-description">123 Fitness Blvd, Los Angeles, CA</p>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <p class="contact__card-description">+1 234 567 890</p>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <p class="contact__card-description">info@ironforge.com</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/1234567890" class="btn contact__btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.733248043701!2d-118.24532098539802!3d34.052234280606705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648fa1d4803%3A0xdec27bf11f9fdee8!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1648141516058!5m2!1sen!2s"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">IRON <span class="text-accent">FORGE</span></a>
+                <p class="footer__description">
+                    Forging elite fitness through discipline, community, and state-of-the-art facilities.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#about" class="footer__link">About Us</a></li>
+                    <li><a href="#services" class="footer__link">Services</a></li>
+                    <li><a href="#trainers" class="footer__link">Trainers</a></li>
+                    <li><a href="#membership" class="footer__link">Membership</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">FAQs</a></li>
+                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer__link">Terms & Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Newsletter</h3>
+                <form action="" class="footer__form">
+                    <input type="email" placeholder="Your Email" class="footer__input">
+                    <button class="btn btn--sm footer__button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copy">
+            &#169; 2024 Iron Forge Gym. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
